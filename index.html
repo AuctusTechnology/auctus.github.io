@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero-container-auctus-title.css">
+</head>
+<body>
+<nav class="navbar">
+    <a href="#" class="logo">Auctus</a>
+    
+    <div class="menu-toggle">☰</div>
+    
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+</nav>
+<div class="hero-container-auctus-title">
+    <div class="tagline-container">
+      <h1 class="hero-element">Plan.</h1>
+      <h1 class="hero-element">Grow.</h1>
+      <h1 class="hero-element">Thrive.</h1>
+    </div>
+    <div class="hero-element app-visual">
+     <img src="img/logo.jpg"></img>
+    </div>
+  </div>
+
+<div>
+    <h1>Features!</h1>
+</div>
+
+<div>
+    <h1>Pricing!</h1>
+</div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tl = gsap.timeline();
+      
+      tl.to('.hero-element', {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.75,
+        ease: "power3.out"
+      });
+      
+      // Add more complex animations here
+    });
+  </script>
+</body>
+</html>
